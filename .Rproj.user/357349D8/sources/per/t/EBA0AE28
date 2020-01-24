@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1579874937958.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "756131114",
+    "id" : "EBA0AE28",
+    "lastKnownWriteTime" : 1579875649,
+    "last_content_update" : 1579875649196,
+    "path" : "~/Documents/Pesquisa/Environmental Sciences/analise_conteudo_R/minicurso_analise_de_conteudo.Rmd",
+    "project_path" : "minicurso_analise_de_conteudo.Rmd",
+    "properties" : {
+        "cursorPosition" : "21,111",
+        "last_setup_crc32" : "710AB5E7bb338d19",
+        "scrollLine" : "18"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
