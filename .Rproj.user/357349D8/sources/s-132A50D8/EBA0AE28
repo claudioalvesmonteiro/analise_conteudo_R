@@ -5,16 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "756131114",
+    "hash" : "0",
     "id" : "EBA0AE28",
-    "lastKnownWriteTime" : 1579875649,
-    "last_content_update" : 1579875649196,
+    "lastKnownWriteTime" : 1579876661,
+    "last_content_update" : 1579876661486,
     "path" : "~/Documents/Pesquisa/Environmental Sciences/analise_conteudo_R/minicurso_analise_de_conteudo.Rmd",
     "project_path" : "minicurso_analise_de_conteudo.Rmd",
     "properties" : {
-        "cursorPosition" : "21,111",
-        "last_setup_crc32" : "710AB5E7bb338d19",
-        "scrollLine" : "18"
+        "cursorPosition" : "15,695",
+        "last_setup_crc32" : "",
+        "scrollLine" : "16"
     },
     "relative_order" : 1,
     "source_on_save" : false,

@@ -13,9 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introdução
 
-A Análise de Conteúdo é uma técnica para construir inferências a partir da identificação de características específicas de mensagens e textos, de forma sistemática e objetiva (HOLSTI, 1968). Sob a perspectiva quantitativa a AC tem um caráter objetivo e sistemático, implementando técnicas que busquem a mensuração, na qual se conta a frequência em que palavras ou conjunto de palavras se repetem e sua proximidade (FRANZOSI, 2010). Já a perspectiva qualitativa permite observar o universo do assunto tratado, sob uma abordagem que trata o objeto de uma maneira mais profunda, assim o(a) pesquisador(a) é capaz de construir uma perspectiva mais completa a respeito do objeto de estudo (BERG, 2001).
+A Análise de Conteúdo é uma técnica para construir inferências a partir da identificação de características específicas de mensagens e textos, de forma sistemática e objetiva (HOLSTI, 1968). Sob a perspectiva quantitativa a AC tem um caráter objetivo e sistemático, implementando técnicas que busquem a mensuração, na qual se conta a frequência em que palavras ou conjunto de palavras se repetem e sua proximidade (FRANZOSI, 2010). Já a perspectiva qualitativa permite observar o universo do assunto tratado, sob uma abordagem que trata o objeto de uma maneira mais profunda, assim o(a) pesquisador(a) é capaz de construir uma perspectiva mais completa a respeito do objeto de estudo (BERG, 2004).
 
-Os Conselhos Gestores de UCs, por sua vez, devem disponibilizar seus documentos internos para que seja garantida a transparências dessas instituições de gestão pública.  Esses documentos incluem: regimento interno (regula o funcionamento do conselho), ata de presença das reuniões, ata e memória das reuniões (descrevendo o decorrer da reunião), dentre outros. Dessa forma, podemos analise a grau de participação dos conselheiros das UCs, categorizando a *situação de fala* de cada um e posteriormente agregando essa informações pelos grupos setoriais a que cada conselheiro pertence.
+Os Conselhos Gestores de UCs, por sua vez, devem disponibilizar seus documentos internos para que seja garantida a transparências dessas instituições de gestão pública.  Esses documentos incluem: regimento interno (regula o funcionamento do conselho), ata de presença das reuniões, ata e memória das reuniões (descrevendo o decorrer da reunião), dentre outros. Dessa forma, podemos analise a grau de participação dos conselheiros das UCs, categorizando a *situação de fala* de cada um e posteriormente agregando essa informações pelos grupos setoriais a que cada conselheiro pertence. A primeira parte desse tutorial introduz a programação e tratamento de dados em R, e na segunda parte é desenvolvida a análise de conteúdo com a codificação dos documentos e a visualização dos dados codificados.
 
 Esse trabalho foi desenvolvido durante minha tese de conclusão de curso em Ciência Política na UFPE. O Trabalho completo pode ser acesso [aqui](https://www.academia.edu/39656649/An%C3%A1lise_da_Participa%C3%A7%C3%A3o_Pol%C3%ADtica_em_Institui%C3%A7%C3%B5es_Deliberativas_P%C5%95atica_em_Software_Livre) e referenciado como segue abaixo.
 
@@ -209,6 +209,8 @@ Após carregar e executar o pacote, será berta uma janela externa. Crie um novo
 ![](images/tela1.png)
 
 ![](images/tela3.png)
+
+
 Após importados os arquivos vá em codes e crie os códigos necessários para sua análise. No caso implementado foram utilizados códigos relativos aos temas de debate e também cada representante recebeu um código, de forma que ao final da codificação haja uma contagem de quantas vezes foram debatidos cada tema e quantas vezes cada representante levantou voz no Conselho. Para codificar, selecione com o cursor do mouse o texto para codificação e clique em "Mark".
 
 ![](images/tela4.png)
@@ -267,7 +269,7 @@ ggplot(cont_cod_tema, aes(x = Var1, y = prop_tema))+
 
 ### 2.2 Proporção de Fala
 
-Outra possibilidade é a contagem de situções de fala por grupo de interesse. Isso é de extrema importância e uma análise inovadora visto que a maioria das análises de participação consideram apenas a presença dos representantes em plenária, enquanto a preponderância da fala fica à margem. A fala assume um caráter essencial no debate público, visto que é a partir da racionalização discursiva e do processo comunicativo que os atores conseguem chegar a decisões coletivas (HABERMAS).
+Outra possibilidade é a contagem de situções de fala por grupo de interesse. Isso é de extrema importância e uma análise inovadora visto que a maioria das análises de participação consideram apenas a presença dos representantes em plenária, enquanto a preponderância da fala fica à margem. A fala assume um caráter essencial no debate público, visto que é a partir da racionalização discursiva e do processo comunicativo que os atores conseguem chegar a decisões coletivas (HABERMAS, 1992).
 
 ```{r}
 # selecionar codigos que nao sao de representantes 
@@ -322,3 +324,29 @@ ggplot(participa_cont, aes(x = Category, y = participaProp))+
 
 ```
 
+</br>
+
+
+## Referências
+
+AQUINO, J. A. Software livre e desenvolvimento de trabalhos científicos: o R como exemplo a ser seguido. Revista Política Hoje, v. 24, n. 2, p. 75-86, 2015.
+ 
+BARDIN, L. Análise de conteúdo. Lisboa (Portugal): Edições , v. 70, 2010 [1977]
+ 
+ 
+BERG, L. B. Qualitative Research Methods for Social Science . Allyn & Bacon. 1989. 
+
+BERG, Bruce Lawrence; LUNE, Howard; LUNE, Howard. Qualitative research methods for the social sciences . Boston, MA: Pearson, 2004
+
+FRANZOSI, R. (Ed.). Quantitative narrative analysis. Sage, 2010. 
+
+HABERMAS, J. A Inclusão do Outro. Estudos de Teoria Política . São Paulo: Edições Loyola, 1996. 
+
+HABERMAS, J. Direito e democracia: entre facticidade e validade . Rio de Janeiro: Tempo Brasileiro, 2 vols. (1997 [1992])
+
+HOLSTI, O. R. (1968) Content analysis. In LINDSEY, G.; E. ARONSON, E. (eds.)
+The Handbook of Social Psychology, 2nd edn, vol. 2, Reading, MA: Addison-Wesley.
+
+PEDROSA, B. M. J. Pesca Artesanal e Áreas Marinhas protegidas em Pernambuco: Uma Abordagem Multidimensional e Institucional. Repositório UFRPE, 2016. 
+
+TATAGIBA, L; ALMEIDA, C. Os conselhos gestores sob o crivo da política: balanços e perspectivas. Serviço Social & Sociedade , São Paulo, n. 109, p. 68-92. 2012.
